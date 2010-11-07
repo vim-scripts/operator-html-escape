@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3312
+
+Repository: http://github.com/tyru/operator-html-escape.vim
+
+
+|operator-html-escape| provides |operator| to escape HTML entities.
+>
+	nmap <c-h> <Plug>(operator-html-escape)
+	nmap <c-u> <Plug>(operator-html-unescape)
+
+This has similar feature with this wiki page:
+	http://vim.wikia.com/wiki/HTML_entities
+
+But the fact is that it is certainly NOT the same
+because this is operator.
+so this can work with |text-objects|.
+You can also enhance |text-objects| by |textobj-user|.
+
+Requirements:
+- Vim 7.2 or later
+- |operator-user| 0.0.5 or later (vimscript#2692)
